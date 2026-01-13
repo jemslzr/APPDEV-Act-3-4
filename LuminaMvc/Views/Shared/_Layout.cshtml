@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lumina Agency</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#1e1b4b] min-h-screen flex flex-col font-sans text-white">
+
+    <nav class="w-full bg-[#1e1b4b] text-white py-4 px-6 fixed top-0 left-0 z-50 shadow-md border-b border-purple-900/30">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <div class="text-2xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 text-transparent bg-clip-text">
+                Lumina Agency
+            </div>
+            <div class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#" class="hover:text-purple-300 transition text-white no-underline">Home</a>
+                <a href="#expertise" class="hover:text-purple-300 transition text-white no-underline">Our Expertise</a>
+                <a href="#contact" class="hover:text-purple-300 transition text-white no-underline">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="flex-grow pt-20">
+        @RenderBody()
+    </main>
+
+    <footer class="w-full bg-[#0f0e17] text-gray-400 py-8 px-6 mt-auto">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-4 md:mb-0 text-center md:text-left">
+                <h3 class="text-white font-bold text-lg">Lumina Agency</h3>
+                <p class="text-sm mt-2">AI-Powered Solutions.</p>
+            </div>
+            <div class="text-sm">
+                &copy; @DateTime.Now.Year Lumina Agency.
+            </div>
+        </div>
+    </footer>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
