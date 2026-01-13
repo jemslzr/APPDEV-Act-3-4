@@ -9,7 +9,7 @@ This application demonstrates the progression from a static frontend implementat
 * **Framework:** .NET 9.0 (ASP.NET Core MVC)
 * **Language:** C#
 * **Styling:** Tailwind CSS (via CDN)
-* **Database:** Entity Framework Core (In-Memory Database)
+* **Database:** Entity Framework Core 
 * **Version Control:** Git & GitHub
 
 ---
@@ -17,7 +17,7 @@ This application demonstrates the progression from a static frontend implementat
 ## 🎨 Activity 3: Frontend Implementation
 **Branch:** `master`
 
-The goal of this activity was to translate a React/Next.js design into ASP.NET Core MVC Razor Views.
+The goal of this activity was to translate a React/Next.js design into ASP.NET Core MVC Razor Views for a better looking front-end UI.
 
 ### Key Features
 * **Master Layout:** Implemented a reusable `_Layout.cshtml` containing the Navigation Bar and Footer.
@@ -35,8 +35,7 @@ The goal of this activity was to translate a React/Next.js design into ASP.NET C
 The goal of this activity was to implement the "Backend" logic, connecting the application to a database to manage services dynamically.
 
 ### Key Features
-* **Entity Framework Core:** Configured an **In-Memory Database** for rapid testing without SQL Server installation.
+* **Entity Framework Core:** Configured an **Auto Creation Database** without writing SQL queries.
 * **MVC CRUD Operations:**
     * **Create:** A form to add new services (Title, Price, Description) to the database.
     * **Read:** A dynamic grid view that fetches and displays services stored in the system.
-* **Dependency Injection:** Injected `AppDbContext` into the Controller to manage data flow.
